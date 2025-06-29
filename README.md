@@ -6,7 +6,7 @@ AI-Assisted Evaluation of Shared Mooring Systems in Deepwater Floating Wind Farm
 ---
 
 
-## 🎯 Objective
+## Objective
 
 The primary goal of this project is to develop a simulation-based, data-driven system to compare **baseline mooring systems** (independent anchors per turbine) with **shared mooring configurations** (interconnected lines and shared anchors) in **deepwater floating offshore wind farms (FOWFs)**.
 
@@ -14,9 +14,9 @@ The project investigates cost-efficiency, environmental impact, dynamic coupling
 
 ---
 
-## ⚙️ Technical Overview
+## ⚙Technical Overview
 
-### 🔍 Problem Statement
+### Problem Statement
 
 Mooring systems account for a substantial portion of FOWF costs. Traditional configurations are often redundant and environmentally intensive. However, shared mooring systems—while potentially more efficient—introduce complexity due to platform coupling and non-linear dynamics.
 
@@ -30,23 +30,23 @@ This project simulates both configurations under standardized assumptions and us
 
 ---
 
-## 🧠 Technical Solution: Key Highlights
+## Technical Solution: Key Highlights
 
 - Two configurations modeled:
   - **Baseline:** 3 lines + 3 anchors per turbine  
   - **Shared:** 1.5 lines + 1.5 anchors per turbine  
 - Key metrics calculated:
-  - 💰 Total Estimated Cost  
-  - 🌱 Seabed Footprint (m²)  
-  - 🔄 Dynamic Coupling Penalty  
-  - ⚠️ Risk Index (1 to 5 scale)  
+  - Total Estimated Cost  
+  - Seabed Footprint (m²)  
+  - Dynamic Coupling Penalty  
+  - ⚠Risk Index (1 to 5 scale)  
 - Outputs:
-  - 📄 CSV file of results (`mooring_comparison.csv`)  
-  - 📊 Plots: `cost_comparison.png`, `footprint_comparison.png`
+  - CSV file of results (`mooring_comparison.csv`)  
+  - Plots: `cost_comparison.png`, `footprint_comparison.png`
 
 ---
 
-## 📁 Input Parameters
+## Input Parameters
 
 | Variable               | Description                                                       |
 |------------------------|-------------------------------------------------------------------|
@@ -61,7 +61,7 @@ This project simulates both configurations under standardized assumptions and us
 
 ---
 
-## 🧭 Workflow Summary (Step-by-Step)
+## Workflow Summary (Step-by-Step)
 
 - **Start**
 - ➤ Define Inputs: turbine count, depth, mooring parameters
@@ -73,7 +73,7 @@ This project simulates both configurations under standardized assumptions and us
 - **End**
 
 
-## 🔁 Simulation Workflow
+## Simulation Workflow
 
 1. **Input Setup:** User specifies turbine count and mooring configurations  
 2. **Preprocessing:** Validates values, initializes results directory  
@@ -86,7 +86,7 @@ This project simulates both configurations under standardized assumptions and us
 
 ---
 
-## 📊 Output Examples
+## Output Examples
 
 | Configuration | Lines/Turbine | Anchors/Turbine | Cost (M USD) | Footprint (m²) | Coupling Penalty | Risk Index |
 |---------------|----------------|------------------|--------------|----------------|-------------------|------------|
@@ -95,7 +95,7 @@ This project simulates both configurations under standardized assumptions and us
 
 ---
 
-## 🖥️ Technical Architecture
+## Technical Architecture
 
 | Module                      | Function                                                                 |
 |-----------------------------|--------------------------------------------------------------------------|
@@ -107,17 +107,17 @@ This project simulates both configurations under standardized assumptions and us
 
 ---
 
-## 📈 Future Potential
+## Future Potential
 
-- ⚡ Real-time simulation engine (cloud/serverless ready)  
-- 📊 Integration with floating platform simulators (e.g., OpenFAST, FAST.Farm)  
-- 🌍 Environmental scoring integration (e.g., seabed mapping overlays)  
-- 📉 Optimization routines for multi-turbine layouts  
-- 📡 Web dashboard for design teams or project engineers
+- Real-time simulation engine (cloud/serverless ready)  
+- Integration with floating platform simulators (e.g., OpenFAST, FAST.Farm)  
+- Environmental scoring integration (e.g., seabed mapping overlays)  
+- Optimization routines for multi-turbine layouts  
+- Web dashboard for design teams or project engineers
 
 ---
 
-## 🔍 Lessons Learned
+## Lessons Learned
 
 - Shared mooring systems offer substantial material and cost savings, but introduce new failure modes.  
 - Simple cost models can provide fast pre-evaluation for layout planning.  
